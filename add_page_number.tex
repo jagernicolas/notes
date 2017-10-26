@@ -1,0 +1,8 @@
+\documentclass{article}
+\RequirePackage[a4paper,top=0cm,left=3cm,right=3cm,bottom=2cm]{geometry}
+
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\begin{document}
+  \includepdf[pagecommand={\thispagestyle{fancy}},pages=1-]{input.pdf}
+\end{document}
