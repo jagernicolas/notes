@@ -1,0 +1,10 @@
+# !/usr/bin/bash
+
+if [ $# -gt 0 ];then
+	sed -i -e "s/input.pdf/$1/" add_page_number.tex
+	pdflatex add_page_number.tex
+	sed -i -e "s/$1/input.pdf/" add_page_number.tex
+	mv add_page_number.pdf $1
+else
+	echo "add_footer_to foo.pdf"
+fi

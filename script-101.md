@@ -345,8 +345,6 @@ echo "nom du script "$0", nombre de parametres :" $#
 
 for var in "$@";do
   echo "la longueur de l'argument "$var" est : ${#var}"
-  (( count++ ))
-  (( accum += ${#var} ))
 done
 
 Bonjour jo
