@@ -13,7 +13,7 @@ Nous allons nous interesser à des outils pour manipuler les chaînes de caract�
 ##### Qu’est-ce donc ?
 
 - Une réponse courte est de dire qu’il s’agit de notations symboliques utilisées pour identifier des motifs dans du texte. Sous certains aspects, les expressions régulières sont semblables aux ‘jokers’.
-- ‘grep’ recherche dans du text les occurences correspondantes à une expression régulière et affiche le résultat.
+- ‘grep’ recherche dans du texte les occurences correspondantes à une expression régulière et affiche le résultat.
 
 Nous avons déjà fait un usage basique, en voici un autre,
 
@@ -133,7 +133,6 @@ username@hostname:~$ grep  '[bg]zip'  dirlist-bin.txt
 bzip2
 bzip2recover
 gzip
-
 ```
 
 On peut utiliser ‘-’ pour définir une suite,

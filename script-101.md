@@ -195,8 +195,8 @@ exit 0
 | -n S1      | La longueur de S1 > 0         |
 | -z S1      | La longueur de S1 = 0         |
 | S1 != S2   | S1 ≠ S2                       |
-| S1 > S2    | Trie S1 et S2. S1 est second  |
-| S1 < S2    | Trie S1 et S2. S1 est premier |
+| S1 \\> S2  | Trie S1 et S2. S1 est second  |
+| S1 \\< S2  | Trie S1 et S2. S1 est premier |
 
 ##### Tester des fichiers :
 
@@ -252,7 +252,6 @@ case $couleur in
    "bleu"  ) echo "comme le ciel";;
    "jaune" ) echo "comme la banane";;
    "vert"  ) echo "comme l'herbe";;
-           ) echo "on a rien de comparable";;
 esac
 ```
 
@@ -293,7 +292,7 @@ while [[ $VAR1 -le 50 ]];do
     VAR1=$((VAR1 + 1))
     if [ $VAR1 -eq 5 ]; then
     	echo "on stop la boucle"
-        Break; # stop la boucle
+        break; # stop la boucle
     fi
     if [ $VAR1 -ne 4 ]; then
     	continue # passe à l'itération suivante
@@ -334,7 +333,7 @@ nom_fonction () {
 ```shell
 # !/usr/bin/bash
 
-Bonjour() {
+Bonjour () {
   if [ -z "$1" ];then
       echo "il manque le nom"
   else
@@ -342,7 +341,7 @@ Bonjour() {
   fi
 }
 
-echo "nom du script "$0”, nombre de parametres : $#"
+echo "nom du script "$0", nombre de parametres :" $#
 
 for var in "$@";do
   echo "la longueur de l'argument "$var" est : ${#var}"
