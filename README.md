@@ -1,1 +1,2 @@
-# notes
+pour me contacter :
+jagernicolas@legtux.org
